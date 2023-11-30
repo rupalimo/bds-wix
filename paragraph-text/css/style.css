@@ -1,8 +1,10 @@
+@import 'fonts.css';
+
 :root {
-	--primary-font: 'Arial', sans-serif;
-	--secondary-font: 'Newsreader', 'Times New Roman', 'Times', serif;
+	--primary-font: 'Adelphe','Arial', sans-serif;
+	--secondary-font: 'Times New Roman', 'Times New Roman', 'Times', serif;
 	--text-color: #0f1312;
-	--menu-color: #004730;
+	--menu-color: #8022df;
 	--text-color-secondary: #fff;
 	font-family: var(--primary-font);
 	color: var(--text-color);
@@ -11,7 +13,7 @@
 
 ::selection {
 	/* color: var(--text-color-secondary); */
-	background-color: red;
+	background-color: rgb(135, 141, 47);
 }
 
 html,
@@ -31,6 +33,9 @@ a {
 	text-decoration: none;
 }
 
+em {
+  font-style: normal;
+}
 nav {
 	display: flex;
 	flex-direction: row;
@@ -69,14 +74,17 @@ aside {
  
 }
 
-
-.img--wrapper img {
-	height: 600px;
-	width: auto;
-	z-index: -1;
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.bio {
+  font-size: 1.24rem;
+  text-align: justify;
 }
 
-section {
+.horizontal--scroll {
   position: absolute;
     bottom: 0;
 }
@@ -84,4 +92,20 @@ section {
 .img--wrapper {
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
+  height: 100vh;
 }
+
+.img--wrapper img {
+	width: 40vh;
+  height: auto;
+	z-index: -1;
+  
+}
+
+.img__01 {
+margin: 2rem 1rem;
+}
+
+
+

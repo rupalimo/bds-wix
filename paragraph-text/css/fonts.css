@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'Adelphe';
+	src: url('../fonts/Adelphe-FlorealRegular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'BBB-Poppins';
+		src: url('../fonts/BBBPoppinsTN-DisplayRegular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
