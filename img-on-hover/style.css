@@ -1,0 +1,63 @@
+:root {
+  --primary-font: "Arial", sans-serif;
+  --secondary-font: ;
+  --text-color: #000;
+  --text-color-secondary: #FFF;
+  font-family: var(--primary-font);
+  color: var(--text-color);
+  font-size: 1em;
+}
+
+::selection {}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------OPTION A-------- */
+div {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  position: absolute;
+}
+
+.width {
+  width: 100%;
+}
+
+.height {
+  height: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p:hover {
+  display: none;
+}
+
+.out {
+  display: none;
+}
+
+#imgFloat {
+  width: 500px;
+  height: auto;
+  position: absolute;
+  z-index: -10;
+  transition: 1s linear;
+}
