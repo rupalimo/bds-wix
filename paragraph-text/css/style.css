@@ -1,10 +1,11 @@
 @import 'fonts.css';
 
 :root {
-	--primary-font: 'Adelphe','Arial', sans-serif;
-	--secondary-font: 'Times New Roman', 'Times New Roman', 'Times', serif;
+	--primary-font: 'PP Neue', 'Arial', sans-serif;
+	--secondary-font: '', 'Times New Roman', 'Times', serif;
 	--text-color: #0f1312;
-	--menu-color: #8022df;
+	--menu-color: #0008ff;
+	--highlight-color: #e9ff00;
 	--text-color-secondary: #fff;
 	font-family: var(--primary-font);
 	color: var(--text-color);
@@ -13,7 +14,7 @@
 
 ::selection {
 	/* color: var(--text-color-secondary); */
-	background-color: rgb(135, 141, 47);
+	background-color: var(--highlight-color);
 }
 
 html,
@@ -23,19 +24,42 @@ body {
 }
 
 body {
-
 	width: 100vw;
 	overflow-y: hidden;
-  overflow-x: scroll;
+	overflow-x: scroll;
 }
 
 a {
 	text-decoration: none;
 }
 
-em {
-  font-style: normal;
+a:hover {
+	background-color: var(--highlight-color);
 }
+
+aside a {
+	cursor: grab;
+
+  	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+aside a:hover {
+text-decoration: none;
+  	background-color: var(--highlight-color);
+}
+
+aside a:hover::after {
+
+  	/* background-color: var(--highlight-color); */
+}
+
+em {
+	font-style: normal;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
 nav {
 	display: flex;
 	flex-direction: row;
@@ -44,17 +68,14 @@ nav {
 	align-items: center;
 	width: 100%;
 	font-size: calc(0.5em + 0.25vw);
-  font-family: var(--primary-font);
-
+	font-family: var(--primary-font);
+	text-transform: uppercase;
 }
 
-nav span {
-	padding: 0 2em;
-}
-
+nav span,
 nav a {
+	margin-right: 2em;
 	color: inherit;
-	padding: 0 2em;
 }
 
 nav a:hover {
@@ -65,47 +86,42 @@ nav a:hover {
 main {
 	position: fixed;
 	font-family: var(--secondary-font);
-  padding: 1rem;
-
+	padding: 1rem;
 }
 
 aside {
 	z-index: 2;
- 
 }
 
 ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
+
 .bio {
-  font-size: 1.24rem;
-  text-align: justify;
+	font-size: 1.5rem;
+	text-align: justify;
 }
 
 .horizontal--scroll {
-  position: absolute;
-    bottom: 0;
+	position: absolute;
+	bottom: 0;
 }
 
 .img--wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	height: 50vh;
 }
 
 .img--wrapper img {
 	width: 40vh;
-  height: auto;
+	height: auto;
 	z-index: -1;
-  
 }
 
 .img__01 {
-margin: 2rem 1rem;
+	margin: 2rem 1rem;
 }
-
-
-
