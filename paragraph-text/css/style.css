@@ -2,12 +2,12 @@
 
 :root {
 	--sans-serif-font: 'PP Neue', sans-serif;
-	--secondary-font: "Arial Narrow", "Arial", sans-serif;
-  --primary-font: serif;
+	--secondary-font: 'Arial Narrow', 'Arial', sans-serif;
+	--primary-font: serif;
 	--text-color: #0f1312;
-	--menu-color: #a79fe4;
-	--highlight-color: #e9ff00;
-	--text-color-secondary: #9283ee;
+	--menu-color: #9283ee;
+	--highlight-color: #a0883d;
+	--text-color-secondary: #83eeb8;
 	font-family: var(--primary-font);
 	color: var(--text-color);
 	font-size: 24px;
@@ -41,18 +41,17 @@ a:hover {
 aside a {
 	cursor: grab;
 
-  	text-decoration: underline;
+	text-decoration: underline;
 	text-underline-offset: 4px;
 }
 
 aside a:hover {
-text-decoration: none;
-  	background-color: var(--highlight-color);
+	text-decoration: none;
+	background-color: var(--highlight-color);
 }
 
 aside a:hover::after {
-
-  	/* background-color: var(--highlight-color); */
+	/* background-color: var(--highlight-color); */
 }
 
 em {
@@ -69,38 +68,37 @@ nav {
 	width: 100%;
 	font-size: calc(0.5em + 0.25vw);
 	font-family: var(--primary-font);
-	text-transform: uppercase;
 }
 
 nav span,
 nav a {
 	margin-right: 2em;
 	color: inherit;
-
 }
 
 nav a:hover {
 	text-decoration: underline;
 	text-underline-offset: 8px;
-  color: var(--text-color);
+	color: var(--text-color);
 }
 
 main {
 	position: fixed;
 	font-family: var(--secondary-font);
 	padding: 0 1rem;
-    line-height: 2rem;
-    font-size: 1.85rem;
+	line-height: 2rem;
+	font-size: 1.85rem;
+  cursor: default;
+  z-index: 5;
 }
 
-
 aside {
-	z-index: 2;
+
 }
 
 aside p {
-  margin-top: 0.75rem;
-  font-size: 1.85rem;
+	margin-top: 0.75rem;
+	font-size: 1.85rem;
 }
 
 ul {
@@ -127,11 +125,55 @@ ul {
 }
 
 .img--wrapper img {
-	width: 40vh;
-	height: auto;
 	z-index: -1;
 }
 
+.img--wrapper img:hover {
+  z-index: 5;
+}
+
 .img__01 {
-	margin: 2rem 1rem;
+	margin: 8% -8px;
+	width: 33vh;
+	height: auto;
+}
+
+.img__02 {
+	margin: 0rem 22% 12rem 22%;
+	width: 12vh;
+	height: auto;
+}
+
+.img__03 {
+	margin: 20% -12%;
+	width: 360px;
+	height: auto;
+}
+
+.img__04 {
+	margin: 0 10%;
+	height: 240px;
+	width: auto;
+}
+.img__05 {
+	margin-bottom: 7%;
+	margin-left: 20%;
+	height: 69vh;
+	width: auto;
+}
+.img__06 {
+	margin: 0 0 auto 12vw;
+	width: 240px;
+	height: auto;
+}
+
+.img__07 {
+	margin: 7% 1%;
+	height: 240px;
+	width: auto;
+}
+.img__08 {
+	margin: 7% 1%;
+	height: 240px;
+	width: auto;
 }
