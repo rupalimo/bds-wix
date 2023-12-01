@@ -1,8 +1,9 @@
 @import 'fonts.css';
 
 :root {
-	--primary-font: 'PP Neue', 'Arial', sans-serif;
-	--secondary-font: '', 'Times New Roman', 'Times', serif;
+	--sans-serif-font: 'PP Neue', sans-serif;
+	--secondary-font: "Arial Narrow", "Arial", sans-serif;
+  --primary-font: serif;
 	--text-color: #0f1312;
 	--menu-color: #0008ff;
 	--highlight-color: #e9ff00;
@@ -56,8 +57,7 @@ aside a:hover::after {
 
 em {
 	font-style: normal;
-	text-decoration: underline;
-	text-underline-offset: 4px;
+	font-family: var(--sans-serif-font);
 }
 
 nav {
@@ -76,21 +76,31 @@ nav span,
 nav a {
 	margin-right: 2em;
 	color: inherit;
+
 }
 
 nav a:hover {
 	text-decoration: underline;
 	text-underline-offset: 8px;
+  color: var(--text-color);
 }
 
 main {
 	position: fixed;
 	font-family: var(--secondary-font);
-	padding: 1rem;
+	padding: 0 1rem;
+    line-height: 2rem;
+    font-size: 1.85rem;
 }
+
 
 aside {
 	z-index: 2;
+}
+
+aside p {
+  margin-top: 0.75rem;
+  font-size: 1.85rem;
 }
 
 ul {
