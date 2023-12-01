@@ -179,3 +179,43 @@ ul {
 	height: 240px;
 	width: auto;
 }
+
+
+/* Breakpoint */
+
+@media (max-width: 990px) {
+	aside p {
+		font-size: 1.46rem;
+		line-height: normal;
+	}
+
+	nav {
+		font-size: calc(0.35em + 0.25vw);
+	}
+
+@media (max-width: 680px) {
+	nav {
+		justify-content: space-between;
+	}
+	nav a, nav span {
+		margin-right: 0px; 
+	}
+}
+
+@media (max-width: 460px) {
+	body {
+		width: 100vw;
+	}
+
+ main {
+width: inherit;
+	margin: 0 auto;
+	padding: 0;
+ }
+
+ main aside p {
+	width: 84%;
+    margin: 0 auto;
+    transform: translateX(-10px);
+ }
+}
