@@ -80,6 +80,8 @@ nav a:hover {
 	text-decoration: underline;
 	text-underline-offset: 8px;
 	color: var(--text-color);
+  background-color: #ecebc4;
+
 }
 
 main {
