@@ -5,9 +5,9 @@
 	--secondary-font: "Arial Narrow", "Arial", sans-serif;
   --primary-font: serif;
 	--text-color: #0f1312;
-	--menu-color: #0008ff;
+	--menu-color: #a79fe4;
 	--highlight-color: #e9ff00;
-	--text-color-secondary: #fff;
+	--text-color-secondary: #9283ee;
 	font-family: var(--primary-font);
 	color: var(--text-color);
 	font-size: 24px;
@@ -15,7 +15,7 @@
 
 ::selection {
 	/* color: var(--text-color-secondary); */
-	background-color: var(--highlight-color);
+	background-color: var(--text-color-secondary);
 }
 
 html,
