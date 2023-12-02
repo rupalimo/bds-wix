@@ -50,10 +50,6 @@ aside a:hover {
 	background-color: var(--highlight-color);
 }
 
-aside a:hover::after {
-	/* background-color: var(--highlight-color); */
-}
-
 em {
 	font-style: normal;
 	font-family: var(--sans-serif-font);
@@ -94,9 +90,6 @@ main {
   z-index: 5;
 }
 
-aside {
-
-}
 
 aside p {
 	margin-top: 0.75rem;
@@ -192,6 +185,7 @@ ul {
 	nav {
 		font-size: calc(0.35em + 0.25vw);
 	}
+}
 
 @media (max-width: 680px) {
 	nav {
