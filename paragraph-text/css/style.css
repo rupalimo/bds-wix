@@ -5,8 +5,8 @@
 	--secondary-font: 'Arial Narrow', 'Arial', sans-serif;
 	--primary-font: serif;
 	--text-color: #0f1312;
-	--menu-color: #9283ee;
-	--highlight-color: #a0883d;
+	--menu-color: #551ae4;
+	--highlight-color: #b99b40;
 	--text-color-secondary: #83eeb8;
 	font-family: var(--primary-font);
 	color: var(--text-color);
@@ -22,12 +22,14 @@ html,
 body {
 	padding: 0;
 	touch-action: manipulation;
+	cursor: ew-resize;
 }
 
 body {
 	width: 100vw;
 	overflow-y: hidden;
 	overflow-x: scroll;
+	background-color: #ececec;
 }
 
 a {
@@ -38,16 +40,21 @@ a:hover {
 	background-color: var(--highlight-color);
 }
 
-aside a {
-	cursor: grab;
+aside p, nav span {
+	cursor: ew-resize;
+}
 
+aside a {
+	cursor: crosshair;
 	text-decoration: underline;
-	text-underline-offset: 4px;
+	text-underline-offset: 6px;
 }
 
 aside a:hover {
 	text-decoration: none;
 	background-color: var(--highlight-color);
+		text-decoration: underline;
+	text-underline-offset: 4px;
 }
 
 em {
@@ -76,7 +83,8 @@ nav a:hover {
 	text-decoration: underline;
 	text-underline-offset: 8px;
 	color: var(--text-color);
-  background-color: #ecebc4;
+  background-color: #fb9d00;
+	cursor: crosshair;
 
 }
 
@@ -87,13 +95,14 @@ main {
 	line-height: 2rem;
 	font-size: 1.85rem;
   cursor: default;
-  z-index: 5;
+ 
 }
 
 
 aside p {
 	margin-top: 0.75rem;
 	font-size: 1.85rem;
+
 }
 
 ul {
@@ -110,6 +119,7 @@ ul {
 .horizontal--scroll {
 	position: absolute;
 	bottom: 0;
+	z-index: -5;
 }
 
 .img--wrapper {
@@ -119,12 +129,11 @@ ul {
 	height: 50vh;
 }
 
-.img--wrapper img {
-	z-index: -1;
-}
 
 .img--wrapper img:hover {
-  z-index: 5;
+  opacity: 0;
+	transition: 0.25s linear;
+	cursor: crosshair;
 }
 
 .img__01 {
