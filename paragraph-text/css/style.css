@@ -40,7 +40,7 @@ a:hover {
 	background-color: var(--highlight-color);
 }
 
-aside p, nav span {
+aside p, nav span, .img--wrapper img:hover  {
 	cursor: ew-resize;
 }
 
@@ -129,12 +129,6 @@ ul {
 	height: 50vh;
 }
 
-
-.img--wrapper img:hover {
-  opacity: 0;
-	transition: 0.25s linear;
-	cursor: crosshair;
-}
 
 .img__01 {
 	margin: 8% -8px;
