@@ -31,6 +31,7 @@ html {
 body {
 	display: grid;
 	grid-template-columns: 50% 50%;
+  
 	overflow: hidden;
 	height: 100vh;
 	position: relative;
@@ -42,15 +43,18 @@ header {
 	border-radius: 12px;
 	font-size: 2.5em;
   padding: 1rem;
+  grid-column: 1;
+  cursor: zoom-in
 }
 
-/* header:hover {
+header:hover {
 font-size: 4.5rem;
     transition: 0.15s linear;
-    width: 150vh;
-    position: sticky;
+    grid-column: 1 / 3;
+    height: -webkit-fill-available;
+    position: fixed;
     background: white;
-} */
+}
 
 .title {
 	text-transform: uppercase;
@@ -74,7 +78,7 @@ section a {
 
 a:focus,
 a:hover {
-	cursor: inherit;
+	cursor: help;
 	text-decoration: underline;
 	text-underline-offset: 8px;
 }
@@ -83,6 +87,8 @@ main {
 	overflow-y: scroll;
   padding: 1.65rem;
   font-size: 2rem;
+    grid-column: 2;
+    cursor: ns-resize;
 }
 
 section {
@@ -96,6 +102,7 @@ h3 {
 	font-weight: normal;
 }
 
+/* ABOUT SECTION */
 .about {
 	margin: 0;
 }
@@ -105,6 +112,7 @@ p {
 	text-align: justify;
 }
 
+/* NEWS SECTION */
 .news {
 	margin-bottom: 1rem;
   /* font-size: 1.5rem; */
@@ -112,7 +120,7 @@ p {
 
 .news .news--description {
 	font-style: italic;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	text-align: left;
 }
 
@@ -130,6 +138,42 @@ p {
 	background-color: var(--text-color);
 	color: var(--link-color);
 	text-decoration: none;
+  	cursor: help;
+}
+
+/* PROJECT SECTION */
+.projects__listing {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+.projects__listing .projects--year {
+  font-size: 1.35rem;
+  border: 1px dotted var(--text-color);
+  border-radius: 10rem;
+  padding: 0 10px;
+  font-family: var(--link-font);
+}
+
+.projects__listing .projects--title {
+  padding: 0;
+}
+
+.projects__listing .projects--title em {
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+}
+
+.projects__listing .projects--year, .projects__listing .projects--title, .projects__listing .projects--location, .projects__listing .projects--description {
+  margin-right: 0.5rem;
+}
+
+.projects__listing .projects--description {
+  font-size: 1rem;
+
 }
 
 /* Images */
@@ -163,11 +207,6 @@ img {
 	transition: 0.5s;
 }
 
-img:hover,
-img:focus {
-	transition-timing-function: ease-in;
-	transition: 0.5s;
-}
 
 /* Breakpoint */
 @media (max-width: 788px) {
