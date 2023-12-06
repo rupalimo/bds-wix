@@ -2,15 +2,16 @@
 
 /* Global Styles */
 :root {
-	--secondary-font: 'Arial Rounded MT Bold','Arial Narrow', 'Arial', sans-serif;
 	--primary-font: 'Marion', serif;
+	--secondary-font: 'Arial Rounded MT Bold', 'Arial', sans-serif;
+	--link-font: 'Arial Narrow', 'Arial', sans-serif;
 	--text-color: #0f1312;
-	--menu-color: #551ae4;
+	--link-color: #fff;
 	--highlight-color: #b99b40;
 	--text-color-secondary: #83eeb8;
 	font-family: var(--primary-font);
 	color: var(--text-color);
-	font-size: 3em;
+	font-size: calc(0.75rem + 0.5vw);
 	cursor: crosshair;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -32,34 +33,32 @@ body {
 	grid-template-columns: 50% 50%;
 	overflow: hidden;
 	height: 100vh;
-  position: relative;
+	position: relative;
 }
 
 header {
 	border: 2px solid var(--text-color);
-	margin: 0.15rem;
+	margin: 0.65rem 0 0.65rem 0.65rem;
 	border-radius: 12px;
+	font-size: 2.5em;
+  padding: 1rem;
 }
 
 /* header:hover {
-font-size: 2.5rem;
+font-size: 4.5rem;
     transition: 0.15s linear;
     width: 150vh;
     position: sticky;
     background: white;
 } */
-header,
-main {
-	padding: 0.45rem;
-}
 
 .title {
 	text-transform: uppercase;
-  text-align: left;
+	text-align: left;
 }
 
 nav {
-	margin: 0.45rem 0;
+	margin: 2rem 0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -82,26 +81,55 @@ a:hover {
 
 main {
 	overflow-y: scroll;
+  padding: 1.65rem;
+  font-size: 2rem;
 }
 
 section {
-	margin: 1rem 0;
-}
-
-section:first-of-type {
-	margin: 0;
+	margin: 1.5rem 0;
 }
 
 h3 {
-	margin: 0 0 0.45rem 0;
+	margin: 0 0 0.75rem 0;
 	font-family: var(--secondary-font);
 	text-transform: uppercase;
 	font-weight: normal;
 }
 
+.about {
+	margin: 0;
+}
+
 p {
 	margin: 0;
 	text-align: justify;
+}
+
+.news {
+	margin-bottom: 1rem;
+  /* font-size: 1.5rem; */
+}
+
+.news .news--description {
+	font-style: italic;
+	font-size: 1.25rem;
+	text-align: left;
+}
+
+.news .news--link {
+	text-decoration: underline;
+	text-underline-offset: 4px;
+	font-style: normal;
+	font-family: var(--link-font);
+	/* font-size: 0.75rem; */
+	padding: 0 4px;
+	margin-left: 0.25rem;
+}
+
+.news .news--link:hover {
+	background-color: var(--text-color);
+	color: var(--link-color);
+	text-decoration: none;
 }
 
 /* Images */
@@ -120,7 +148,7 @@ figure::after {
 }
 
 figcaption {
-	font-size: 16px;
+	/* font-size: 16px; */
 	width: max-content;
 	margin: 0.45rem;
 }
@@ -145,11 +173,10 @@ img:focus {
 @media (max-width: 788px) {
 	body {
 		display: block;
-		font-size: 0.55rem;
+		/* font-size: 0.55rem; */
 	}
 
 	header {
-
 		position: fixed;
 		bottom: 0;
 		background-color: white;
@@ -163,7 +190,7 @@ img:focus {
 	}
 
 	.title {
-		font-size: 0.55rem;
+		/* font-size: 0.55rem; */
 		padding-left: 0.35rem;
 	}
 
