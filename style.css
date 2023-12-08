@@ -48,10 +48,16 @@ header p {
 nav {
 	display: flex;
 	flex-direction: column;
+	padding: 1rem 0;
+	border: 1px solid var(--highlight-color);
+box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+border-radius: 8px;
 }
 
 nav a {
 	text-decoration: none;
+	padding: 0 1rem;
+
 }
 
 .title {
