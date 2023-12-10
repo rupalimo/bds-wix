@@ -50,14 +50,13 @@ nav {
 	flex-direction: column;
 	padding: 1rem 0;
 	border: 1px solid var(--highlight-color);
-box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-border-radius: 8px;
+	box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	border-radius: 8px;
 }
 
 nav a {
 	text-decoration: none;
 	padding: 0 1rem;
-
 }
 
 .title {
@@ -126,6 +125,21 @@ section {
 pre {
 	display: inline-flex;
 }
+
+span {
+	display: flex;
+	flex-direction: row;
+}
+
+span h5 {
+	margin-bottom: 0;
+}
+
+span h5 + h5 {
+ margin-left: 0.5rem;
+ color: grey;
+}
+
 /* Images */
 figure {
 	width: 25%;
