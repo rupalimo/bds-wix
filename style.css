@@ -18,8 +18,7 @@
 }
 
 ::selection {
-	color: white;
-	background: var(--text-color);
+	background: var(--link-color);
 }
 
 html {
