@@ -4,11 +4,11 @@
 :root {
 	--primary-font: 'Arial', sans-serif;
 	--secondary-font: 'Arial Narrow', 'Arial', sans-serif;
-	--serif-font: serif;
-	--primary-color: #0f1312;
+	--serif-font: 'Times New Roman', serif;
+	--primary-color: #3d342b;
 	--secondary-color: #f1ebd9;
-	--highlight-color: rgb(23, 38, 255);
-	--link-color: #00ff33;
+	--highlight-color: #4c00fd;
+	--link-color: #84ff00;
 	font-family: var(--serif-font);
 	color: var(-primary-color);
 	font-size: 1.25rem;
