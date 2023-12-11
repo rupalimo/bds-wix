@@ -1,21 +1,18 @@
-@import 'fonts.css';
-
 :root {
-	--sans-serif-font: 'PP Neue', sans-serif;
-	--secondary-font: 'Arial Narrow', 'Arial', sans-serif;
-	--primary-font: serif;
-	--text-color: #0f1312;
-	--menu-color: #551ae4;
-	--highlight-color: #b99b40;
-	--text-color-secondary: #83eeb8;
+	--primary-font: 'Arial Narrow', 'Arial', sans-serif;
+	--text-color: #3d342b;
+	--menu-color: #4c00fd;
+	--highlight-color: #84ff00;
+	--white-color: #f1ebd9;
 	font-family: var(--primary-font);
 	color: var(--text-color);
 	font-size: 24px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-	/* color: var(--text-color-secondary); */
-	background-color: var(--text-color-secondary);
+	background-color: var(--white-color);
 }
 
 html,
@@ -39,7 +36,9 @@ a:hover {
 	background-color: var(--highlight-color);
 }
 
-aside p, nav span, .img--wrapper img:hover  {
+aside p,
+nav span,
+.img--wrapper img:hover {
 	cursor: ew-resize;
 }
 
@@ -52,13 +51,14 @@ aside a {
 aside a:hover {
 	text-decoration: none;
 	background-color: var(--highlight-color);
-		text-decoration: underline;
+	text-decoration: underline;
 	text-underline-offset: 4px;
 }
 
 em {
-	font-style: normal;
 	font-family: var(--sans-serif-font);
+	font-size: 0.85rem;
+	font-weight: bold;
 }
 
 nav {
@@ -79,29 +79,22 @@ nav a {
 }
 
 nav a:hover {
-	text-decoration: underline;
-	text-underline-offset: 8px;
-	color: var(--text-color);
-  background-color: #fb9d00;
+	color: var(--white-color);
+	background-color: var(--menu-color);
 	cursor: crosshair;
-
 }
 
 main {
 	position: fixed;
-	font-family: var(--secondary-font);
 	padding: 0 1rem;
 	line-height: 2rem;
 	font-size: 1.85rem;
-  cursor: default;
- 
+	cursor: default;
 }
-
 
 aside p {
 	margin-top: 0.75rem;
 	font-size: 1.85rem;
-
 }
 
 ul {
@@ -127,7 +120,6 @@ ul {
 	align-items: flex-end;
 	height: 50vh;
 }
-
 
 .img__01 {
 	margin: 8% -8px;
@@ -175,7 +167,6 @@ ul {
 	width: auto;
 }
 
-
 /* Breakpoint */
 
 @media (max-width: 990px) {
@@ -193,8 +184,9 @@ ul {
 	nav {
 		justify-content: space-between;
 	}
-	nav a, nav span {
-		margin-right: 0px; 
+	nav a,
+	nav span {
+		margin-right: 0px;
 	}
 }
 
@@ -203,15 +195,15 @@ ul {
 		width: 100vw;
 	}
 
- main {
-width: inherit;
-	margin: 0 auto;
-	padding: 0;
- }
+	main {
+		width: inherit;
+		margin: 0 auto;
+		padding: 0;
+	}
 
- main aside p {
-	width: 84%;
-    margin: 0 auto;
-    transform: translateX(-10px);
- }
+	main aside p {
+		width: 84%;
+		margin: 0 auto;
+		transform: translateX(-10px);
+	}
 }
