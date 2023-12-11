@@ -52,6 +52,7 @@ header:hover {
 	transition: 0.15s linear;
 	grid-column: 1 / 3;
 	height: -webkit-fill-available;
+		height: -moz-fill-available;
 	height: fill-available;
 	position: fixed;
 	background: white;
