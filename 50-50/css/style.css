@@ -1,14 +1,12 @@
-@import 'fonts.css';
-
 /* Global Styles */
 :root {
 	--primary-font: 'Marion', serif;
-	--secondary-font: 'Arial Rounded MT Bold', 'Arial', sans-serif;
+	--secondary-font: 'Arial', sans-serif;
 	--link-font: 'Arial Narrow', 'Arial', sans-serif;
-	--text-color: #0f1312;
-	--link-color: #fff;
-	--highlight-color: #b99b40;
-	--text-color-secondary: #83eeb8;
+	--text-color: rgb(31, 24, 48);
+	--link-color: #4c00fd;
+	--highlight-color: #84ff00;
+	--white-color: #fff;
 	font-family: var(--primary-font);
 	color: var(--text-color);
 	font-size: calc(0.75rem + 0.5vw);
@@ -38,7 +36,7 @@ body {
 }
 
 header {
-	border: 2px solid var(--text-color);
+	border: 2px dashed var(--text-color);
 	margin: 0.65rem 0 0.65rem 0.65rem;
 	border-radius: 12px;
 	font-size: 2.5em;
@@ -138,7 +136,7 @@ p {
 
 .news .news--link:hover {
 	background-color: var(--text-color);
-	color: var(--link-color);
+	color: var(--white-color);
 	text-decoration: none;
 	cursor: help;
 }
@@ -154,7 +152,7 @@ p {
 
 .projects__listing .projects--year {
 	font-size: 1.35rem;
-	border: 1px dotted var(--text-color);
+	border: 1px solid var(--text-color);
 	border-radius: 10rem;
 	padding: 0 10px;
 	font-family: var(--link-font);
