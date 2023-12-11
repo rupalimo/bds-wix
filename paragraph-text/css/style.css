@@ -121,6 +121,19 @@ ul {
 	height: 50vh;
 }
 
+.img--wrapper img {
+	 filter: blur(8px);
+  -webkit-filter: blur(8px);
+	  -moz-filter: blur(8px);
+}
+
+.img--wrapper img:hover {
+		 filter: blur(0px);
+  -webkit-filter: blur(0px);
+	  -moz-filter: blur(0px);
+		transition: 0.15s linear;
+}
+
 .img__01 {
 	margin-bottom: 0;
 	margin-left: -1rem;
