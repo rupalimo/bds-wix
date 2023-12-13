@@ -68,14 +68,7 @@ nav a {
 .note {
 	font-family: var(--serif-font);
 	font-weight: normal;
-	line-height: 1.25;
-	border-left: 4px solid #FFF;
-	padding: 0 1rem;
-	font-size: 0.75rem;
-}
-
-.note h5 {
-	margin: 1rem 0 0 0;
+	margin-top: 1.5rem;
 	text-decoration: underline;
 	text-underline-offset: 3px;
 }
@@ -103,6 +96,15 @@ main {
 h3 {
 	background-color: var(--secondary-color);
 	width: min-content;
+	font-size: 1.45rem;
+	margin-bottom: 0;
+	/* border-radius: 150%; */
+	/* -moz-box-shadow: 5px 5px 15px 5px var(--secondary-color),
+		5px 5px 15px 5px var(--secondary-color);
+	-webkit-box-shadow: 5px 5px 15px 5px var(--secondary-color),
+		5px 5px 15px 5px var(--secondary-color);
+	box-shadow: 5px 5px 15px 5px var(--secondary-color),
+		5px 5px 15px 5px var(--secondary-color); */
 }
 
 h3,
@@ -121,10 +123,8 @@ pre {
 
 p {
 	text-align: justify;
-}
-
-p.note {
-	margin-top: 0;
+	margin: 0.5rem 0;
+	font-size: 0.85rem;
 }
 
 section {
@@ -138,16 +138,17 @@ pre {
 span {
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 1rem;
 }
 
 span h5 {
 	margin-bottom: 0;
+	font-size: 1rem;
 }
 
-
 span h5 + h5 {
- margin-left: 0.5rem;
- color: grey;
+	margin-left: 0.5rem;
+	color: grey;
 }
 
 /* Images */
@@ -184,6 +185,7 @@ img {
 ul {
 	list-style: none;
 	margin-top: -0.5rem;
+	font-size: 0.85rem;
 }
 
 ul li {
