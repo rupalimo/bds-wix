@@ -69,7 +69,7 @@ nav a {
 	font-family: var(--serif-font);
 	font-weight: normal;
 	line-height: 1.25;
-	border-left: 4px solid var(--link-color);
+	border-left: 4px solid #FFF;
 	padding: 0 1rem;
 	font-size: 0.75rem;
 }
@@ -100,11 +100,23 @@ main {
 	font-size: 1rem;
 }
 
+h3 {
+	background-color: var(--secondary-color);
+	width: min-content;
+}
+
 h3,
 h5 {
 	font-family: var(--secondary-font);
 	text-transform: uppercase;
 	font-weight: normal;
+}
+
+pre {
+	background-color: var(--link-color);
+	font-family: var(--secondary-font);
+	margin: 0;
+	font-size: inherit;
 }
 
 p {
@@ -131,6 +143,7 @@ span {
 span h5 {
 	margin-bottom: 0;
 }
+
 
 span h5 + h5 {
  margin-left: 0.5rem;
@@ -169,7 +182,13 @@ img {
 }
 
 ul {
-	list-style: square;
+	list-style: none;
+	margin-top: -0.5rem;
+}
+
+ul li {
+	list-style: circle;
+	margin: 0.125rem 0;
 }
 
 /* Breakpoint */
