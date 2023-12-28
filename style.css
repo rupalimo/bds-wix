@@ -3,6 +3,7 @@
 	--primary-font: 'Arial', sans-serif;
 	--secondary-font: 'Arial Narrow', 'Arial', sans-serif;
 	--serif-font: 'Times New Roman', serif;
+	--monospace-font: 'Courier New', monospace;
 	--primary-color: #3d342b;
 	--secondary-color: #f1ebd9;
 	--highlight-color: #4c00fd;
@@ -66,11 +67,16 @@ nav a {
 }
 
 .note {
-	font-family: var(--serif-font);
+	font-family: var(--monospace-font);
 	font-weight: normal;
 	margin-top: 1.5rem;
 	text-decoration: underline;
 	text-underline-offset: 3px;
+}
+
+.note--text {
+	font-family: var(--monospace-font);
+	font-size: 0.8rem;
 }
 
 a {
