@@ -27,15 +27,16 @@ html {
 
 body {
 	width: 800px;
-	margin: 0 1rem;
+	margin: 0 auto;
 }
 
 header {
 	position: fixed;
-	top: 4.5rem;
-	left: 836px;
-	font-family: var(--secondary-font);
-	margin: 0 1rem;
+    top: 0;
+    left: 50%;
+    font-family: var(--secondary-font);
+    transform: translateX(-50%);
+		    width: 100%;
 }
 
 header p {
@@ -45,16 +46,24 @@ header p {
 
 nav {
 	display: flex;
-	flex-direction: column;
-	padding: 1rem 0;
-	border: 1px solid var(--highlight-color);
+	flex-direction: row;
+	padding: 0.5rem 0;
+	border-bottom: 1px solid var(--highlight-color);
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	border-radius: 24px;
+	    background-color: #ffffffc7;
+justify-content: center;
 }
 
 nav a {
 	text-decoration: none;
 	padding: 0 1rem;
+}
+
+nav a:hover {
+	text-decoration: underline;
+	background-color: rgba(255, 255, 255, 0);
+	color: var(--highlight-color);
+	
 }
 
 
@@ -95,6 +104,7 @@ main {
 	overflow-y: scroll;
 	padding: 0 0.5rem;
 	font-size: 1rem;
+	margin-top: 2.75rem;
 }
 
 h3 {
