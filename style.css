@@ -57,13 +57,11 @@ nav a {
 	padding: 0 1rem;
 }
 
-.title {
-	text-transform: uppercase;
-}
 
 .title {
 	font-family: var(--secondary-font);
 	text-align: left;
+		text-transform: uppercase;
 }
 
 .note {
